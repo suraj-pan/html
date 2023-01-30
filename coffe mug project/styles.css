@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --darkGreen: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --gray: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --head: 2rem;
+  --text: 1rem;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream);
+}
+img{
+    width: 100%;
+}
+
+.desk-img{
+    height: 22rem;
+    width: 15rem;
+    border-radius: 1em 0 0em 1em;
+}
+.card-box{
+    margin: 0em 2em;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 1.5em;
+    display: flex;
+}
+
+.card-text{
+    margin: 1rem 2rem;
+    text-align: left;
+}
+
+.product {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--text);
+    color: var(--gray);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .title {
+    font-size: var(--head);
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+    line-height: 1;
+    margin: 0.6em 0 0.7em 0;
+  }
+
+  .description {
+    font-family: "Montserrat", sans-serif;
+    width: 96%;
+    font-size: var(--text);
+    color: var(--gray);
+    font-weight: 500;
+    margin-bottom: 1.5em;
+  }
+
+  .strike {
+    text-decoration: line-through;
+    align-self: center;
+  }
+  .green_text {
+    margin-right: 0.3em;
+    color: var(--darkGreen);
+  }
+
+  .btn {
+    display: block;
+    margin: 2em 0 1em 0;
+    background-color: var(--darkGreen);
+    width: 100%;
+    padding: 1em 0;
+    color: var(--white);
+    border: 0;
+    border-radius: 0.7em;
+    outline: none;
+    cursor: pointer;
+    animation: suraj 3 ease-out 0.5s 1 ;
+  }
+  
+  .btn:hover {
+    background-color: hsl(156, 24%, 24%);
+
+  }
+
+  @keyframes suraj{
+    0%{
+        background-color: black;
+    }
+    25%{
+        width: 25%;
+    }
+    50%{
+        width: 50%;
+    }
+  }
+
+  .btn_img {
+    margin-right: 1em;
+    max-width: 100%;
+    height: 10px;
+    width: 10px;
+  }
